@@ -1,0 +1,406 @@
+/* judul */
+.judul {
+  text-align: center;
+}
+
+/* ---------------Start Of Container Form---------------- */
+
+/* container */
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 10px;
+  gap: 5%;
+}
+
+/* pembungkus form bmi sebelah kiri */
+.container-form {
+  width: 50%;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+/* pembungkus hasil penghitungan sebelah kanan */
+.container-result {
+  width: 50%;
+}
+
+/* bagian paragraph */
+.paragrapph-awal {
+  text-align: center;
+  padding: 10px;
+}
+
+/* div kedua gender */
+.choose {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/* div masing gender */
+.gender {
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  margin-bottom: 5%;
+  padding-top: 5px;
+}
+
+.gender-men-selected,
+.gender-women-selected {
+  border-color: green; /* Mengubah warna border menjadi hijau */
+  box-shadow: 0 0 10px green; /* Menambahkan box-shadow berwarna hijau */
+}
+
+/* efek akan mengembang ketika hover*/
+.gender:hover {
+  transform: scale(1.05);
+}
+
+/* gambar */
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* bagian pembungkus div form lable dan input */
+.form {
+  display: block;
+}
+
+/* pembungkus  form lable dan input*/
+.container-form-input {
+  margin-bottom: 15px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* input */
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* bagian pembungkus tombol */
+.buttons {
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+/* bagian tombol */
+.btn {
+  cursor: pointer;
+  padding: 12px 22px;
+  width: 20%;
+  transition: transform 0.2s;
+}
+
+/* efek mengembang ketika hover */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* tombol submit */
+.btn-submit {
+  background-color: rgb(30, 223, 13);
+  font-weight: 500;
+  font-size: medium;
+  border-radius: 5px;
+}
+
+/* tombol reset */
+.btn-reset {
+  background-color: rgb(184, 6, 6);
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  border-radius: 5px;
+}
+/* ---------------End Of Container Form---------------- */
+
+/* ---------------Start Of Container Result---------------- */
+
+/* container hasil */
+.container-result {
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  /* padding-top: 8%; */
+}
+
+/* bagian pembungkus table */
+.infromation {
+  text-align: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin-top: 10px; */
+  margin-bottom: 5%;
+}
+
+/* table dan keseluruhannya */
+table,
+th,
+td {
+  border: 1px solid black;
+  width: auto;
+  font-weight: 600;
+}
+
+/* warna table */
+.kurus {
+  background-color: blue;
+  color: white;
+}
+.normal {
+  background-color: green;
+  color: white;
+}
+.gemuk {
+  background-color: lightgreen;
+  color: black;
+}
+.obesitas1 {
+  background-color: yellow;
+  color: black;
+}
+.obesitas2 {
+  background-color: red;
+  color: white;
+}
+
+/* perubahan width untuk table */
+table {
+  width: 100%;
+}
+
+.not-result {
+  display: block;
+}
+.not-result-update {
+  display: none;
+}
+
+.result-show {
+  display: none;
+}
+.result-show-update {
+  display: block;
+}
+.unable-result {
+  text-align: center;
+}
+
+.img-res {
+  width: 250px;
+  height: 250px;
+}
+
+/* ---------------End Of Container Result---------------- */
+
+/* .container-result-show{
+    display: none;
+}
+.result-show */
+
+/* footer */
+footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 834px) {
+  /* container */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* pembungkus form bmi sebelah kiri */
+  .container-form {
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 3%;
+  }
+  /* pembungkus hasil penghitungan sebelah kanan */
+  .container-result {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px;
+        gap: 5%; */
+  }
+
+  /* pembungkus form bmi sebelah kiri */
+  .container-form {
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  /* pembungkus hasil penghitungan sebelah kanan */
+  .container-result {
+    width: 100%;
+  }
+
+  /* div masing gender */
+  .gender {
+    width: 150px;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    margin-bottom: 5%;
+    padding-top: 5px;
+  }
+
+  .gender-men-selected,
+  .gender-women-selected {
+    border-color: green; /* Mengubah warna border menjadi hijau */
+    box-shadow: 0 0 10px green; /* Menambahkan box-shadow berwarna hijau */
+  }
+
+  /* bagian tombol */
+  .btn {
+    padding: 10px 20px;
+    width: 40%;
+  }
+  .btn-submit {
+    /* background-color: rgb(30, 223, 13); */
+    font-weight: 500;
+    font-size: small;
+    border-radius: 5px;
+  }
+
+  /* tombol reset */
+  .btn-reset {
+    /* background-color: rgb(184, 6, 6); */
+    color: white;
+    font-weight: 500;
+    font-size: small;
+    border-radius: 5px;
+  }
+
+  /* bagian pembungkus table */
+  .infromation {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  /* table dan keseluruhannya */
+  table,
+  th,
+  td {
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    /* container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px;
+        gap: 5%; */
+  }
+
+  /* pembungkus form bmi sebelah kiri */
+  .container-form {
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  /* pembungkus hasil penghitungan sebelah kanan */
+  .container-result {
+    width: 100%;
+  }
+
+  /* div masing gender */
+  .gender {
+    width: 120px;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    margin-bottom: 5%;
+    padding-top: 5px;
+  }
+
+  .gender-men-selected,
+  .gender-women-selected {
+    border-color: green; /* Mengubah warna border menjadi hijau */
+    box-shadow: 0 0 10px green; /* Menambahkan box-shadow berwarna hijau */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  /* input */
+input {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+
+  /* bagian tombol */
+  .btn {
+    padding: 10px 20px;
+    width: 40%;
+  }
+  .btn-submit {
+    /* background-color: rgb(30, 223, 13); */
+    font-weight: 500;
+    font-size: small;
+    border-radius: 5px;
+  }
+
+  /* tombol reset */
+  .btn-reset {
+    /* background-color: rgb(184, 6, 6); */
+    color: white;
+    font-weight: 500;
+    font-size: small;
+    border-radius: 5px;
+  }
+
+  /* bagian pembungkus table */
+  .infromation {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  /* table dan keseluruhannya */
+
+  table,
+  th,
+  td {
+    font-weight: 300;
+    font-size: 12px;
+    align-items: center;
+  }
+  }

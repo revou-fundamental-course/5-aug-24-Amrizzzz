@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <h2 class="judul">Kalkulator BMI</h2>
+        </header>
+        <!-- Main -->
+        <main class="container">
+            <div class="container-form">
+                <!-- paragraph -->
+                <div>
+                    <p class="paragrapph-awal">
+                        Kalkulator BMI digunakan untuk meenghitung Indeks Masa
+                        Tubuh
+                        (IMT) dan mengecek seberapa ideal berat badanmu. kamu
+                        juga bisa
+                        pakai kalkulator ini untuk cek IMT
+                    </p>
+                </div>
+                <!-- choose gender -->
+                <div class="choose">
+                    <div id="men" class="gender" onclick="genders('men')">
+                        <img class="men" src="/image/men.png" />
+                        <p>Laki-Laki</p>
+                    </div>
+                    <div id="women" class="gender" onclick="genders('women')">
+                        <img class="women" src="/image/women.png" />
+                        <p>Perempuan</p>
+                    </div>
+                </div>
+                <!-- form -->
+                <div class="form">
+                    <div class="container-form-input">
+                        <label>Berapa Usia Kamu</label>
+                        <input id="usia" type="number">
+                        
+                    </div>
+                    <div class="container-form-input">
+                        <label>Berapa Tinggi Kamu</label>
+                        <input id="height" type="number">
+                        
+                    </div>
+                    <div class="container-form-input">
+                        <label>Berapa Berat Badan Kamu</label>
+                        <input id="weight" type="number">
+                        
+                    </div>
+                    <div class="buttons">
+                        <button id="submit"
+                            class="btn btn-submit"
+                            onclick="submit()">Lanjutkan</button>
+                        <button id="reset" class="btn btn-reset"
+                            onclick="reset()">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <!-- hasil -->
+            <div class="container-result">
+                <div class="infromation">
+                    <h3>Informasi BMI</h3>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="kurus">Kurus</td>
+                            <td class="normal">Normal</td>
+                            <td class="gemuk">Gemuk</td>
+                            <td class="obesitas1">Obesitas 1</td>
+                            <td class="obesitas2">Obesitas 2</td>
+                        </tr>
+                        <tr>
+                            <td>BMI</td>
+                            <td class="kurus"> &lt; 18.5 </td>
+                            <td class="normal"> 18,5 - 24,9</td>
+                            <td class="gemuk"> 25,0 - 29,9</td>
+                            <td class="obesitas1"> 30,0 - 34,9</td>
+                            <td class="obesitas2"> &gt; 35</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="not-result" class="not-result">
+                    <h2 class="unable-result">Hasil Belum Bisa
+                        Ditampilkan</h2>
+                    <img class="img-res" src="/image/block.png">
+                    <h4>Cobalah untuk memasukkan data yang diperlukan dengan
+                        benar</h4>
+                </div>
+                <div id="result-show" class="result-show">
+                    <h2 id="show-result" class="unable-result">
+                    </h2>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            ©2024 by Muhamad Amrizal
+        </footer>
+    </body>
+
+    <script src="js/index.js"></script>
+</html>
